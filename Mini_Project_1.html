@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form and Login</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: antiquewhite;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1{
+            
+            color:black;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        form{
+            background-color: rgb(214, 218, 177);
+            padding:20px;
+            border: 5px solid black;
+            border-radius: 5px;
+            margin:40px auto;
+            width:500px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2> Student Registration Form</h2>
+    <hr>
+    <!--Registration Form-->
+    <form>
+        <label> Student Name:</label>
+        <input type="text"placeholder="Enter your Name">
+        <br><br>
+
+        <label> Student EmailID:</label>
+        <input type="email"placeholder="Enter your email">
+        <br><br>
+
+        <label> Student Age:<label>
+        <input type="number"placeholder="Enter your age">
+        <br><br>
+
+        <label> Student Phone number:<label>
+        <input type="number"placeholder="Enter your number">
+        <br><br>
+
+        <label> Student Password:<label>
+        <input type="password"placeholder="Create password"required minlength="6">
+        <br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male" required>Male
+        <input type="radio" name="gender" value="female" required>Female
+        <input type="radio" name="gender" value="other" required>Other
+        <br><br>
+<label> Date of Birth:</label><br>
+<input type="date" name="dob" required>
+<br><br>
+        
+<label>Course:</label>
+<select name="Course">
+    <option value="">Select Course</option>
+    <option>BCA</option>
+    <option>BSc</option>
+    <option>BE</option>
+    <option>B.Com</option>
+</select>
+<br><br>
+
+<label>Address:</label><br>
+<textarea name="address" rows="4" cols="30" placeholder="Enter Address"></textarea>
+<br><br>
+
+<input type="checkbox" required>    
+<label>I agree to the Terms and Conditions</label>
+<br><br>
+
+<button type="submit">Register</button>
+<button type="reset">Clear</button>
+<br>
+</form>
+</body>
+</html>
